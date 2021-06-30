@@ -25,7 +25,7 @@ class WalletAddedCoinParser:
     def __init__(self):
         logging.info("Enabled parser for wallet activity - added coins.")
         self._regex = re.compile(
-            r"([0-9:.]*) wallet (?:src|chia).wallet.wallet_state_manager(?:\s?): "
+            r"([0-9:.]*) wallet (?:src|flax).wallet.wallet_state_manager(?:\s?): "
             r"INFO\s*Adding coin: {'amount': ([0-9]*),"
         )
 
